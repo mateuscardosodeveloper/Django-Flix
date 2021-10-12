@@ -3,8 +3,8 @@ from django.utils import timezone
 from django.db.models.signals import pre_save
 from django.utils.text import slugify
 
-from db.models import PublishStateOptions
-from db.receivers import publish_state_pre_save, slugify_pre_save
+from djangoflix.db.models import PublishStateOptions
+from djangoflix.db.receivers import publish_state_pre_save, slugify_pre_save
 
 
 class VideoQuerySet(models.QuerySet):
